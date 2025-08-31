@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Personal Portfolio - Fantasy Map</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1 class="title">The Chronicles of Rome Rachlin</h1>
+            <p class="subtitle">A Journey Through Skills and Adventures</p>
+            <div class="social-links">
+                <a href="https://github.com/romerachlin1" target="_blank" class="social-link github">
+                    <span class="social-icon">🐙</span>
+                    <span class="social-text">GitHub</span>
+                </a>
+                <a href="https://www.linkedin.com/in/rome-rachlin-software-developer/" target="_blank" class="social-link linkedin">
+                    <span class="social-icon">💼</span>
+                    <span class="social-text">LinkedIn</span>
+                </a>
+            </div>
+        </header>
+
+        <!-- Fantasy Map -->
+        <div class="map-container">
+            <div class="map">
+                <!-- Resume Regions -->
+                <div class="map-region resume-region" data-section="experience" style="top: 20%; left: 30%;">
+                    <div class="region-label">Experience</div>
+                    <div class="region-icon">⚔️</div>
+                </div>
+                
+                <div class="map-region resume-region" data-section="education" style="top: 40%; left: 60%;">
+                    <div class="region-label">Education</div>
+                    <div class="region-icon">📚</div>
+                </div>
+                
+                <div class="map-region resume-region" data-section="skills" style="top: 60%; left: 25%;">
+                    <div class="region-label">Skills</div>
+                    <div class="region-icon">🔮</div>
+                </div>
+                
+                <div class="map-region resume-region" data-section="about" style="top: 35%; left: 15%;">
+                    <div class="region-label">About Me</div>
+                    <div class="region-icon">👤</div>
+                </div>
+
+                <!-- Project Regions -->
+                <div class="map-region project-region" data-project="textBasedRpg" style="top: 15%; left: 70%;">
+                    <div class="region-label">Text-Based RPG</div>
+                    <div class="region-icon">⚔️</div>
+                </div>
+                
+                <div class="map-region project-region" data-project="textRpgGui" style="top: 50%; left: 80%;">
+                    <div class="region-label">RPG GUI</div>
+                    <div class="region-icon">🖥️</div>
+                </div>
+                
+                <div class="map-region project-region" data-project="bitcoinTracker" style="top: 80%; left: 20%;">
+                    <div class="region-label">Bitcoin Tracker</div>
+                    <div class="region-icon">₿</div>
+                </div>
+                
+                <div class="map-region project-region" data-project="bullsAndCows" style="top: 25%; left: 5%;">
+                    <div class="region-label">Bulls & Cows</div>
+                    <div class="region-icon">🎯</div>
+                </div>
+                
+                <div class="map-region project-region" data-project="garageManagement" style="top: 60%; left: 70%;">
+                    <div class="region-label">Garage System</div>
+                    <div class="region-icon">🔧</div>
+                </div>
+                
+
+
+
+            </div>
+        </div>
+
+        <!-- Modal for Content -->
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div id="modal-body"></div>
+            </div>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="nav">
+            <a href="Rome Rachlin Resume.pdf" target="_blank" class="nav-btn resume-pdf">Resume PDF</a>
+        </nav>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
