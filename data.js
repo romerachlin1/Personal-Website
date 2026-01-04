@@ -232,6 +232,83 @@ const portfolioData = {
             screenshot2: "ProjectScreenshots/Garage_Managment_System/Screenshot 2025-08-31 142117.png",
             screenshot3: "ProjectScreenshots/Garage_Managment_System/Screenshot 2025-08-31 142130.png",
             status: "Completed"
+        },
+        dndSessionAnalyzer: {
+            title: "DnD Session Analyzer",
+            description: "An event-driven microservices system that automates Dungeons & Dragons session analysis. It utilizes a Dockerized pipeline to convert raw video/audio into actionable Dungeon Master insights using AssemblyAI for diarization and OpenAI for sentiment analysis.",
+            technologies: ["Python", "Docker", "FastAPI", "RabbitMQ", "PostgreSQL", "Redis", "MinIO", "AssemblyAI", "OpenAI GPT-4", "FFmpeg", "Microservices Architecture", "Event-Driven Architecture"],
+            features: [
+                "Event-driven microservices architecture with Docker orchestration",
+                "Automatic video/audio conversion and transcription using AssemblyAI",
+                "Speaker diarization to identify DM vs. Players",
+                "AI-powered sentiment analysis per scene using OpenAI",
+                "Session summary generation with actionable DM recommendations",
+                "PostgreSQL database storage and Redis caching",
+                "MinIO object storage for raw files",
+                "RESTful API with FastAPI for reporting service",
+                "CLI interface for file upload and session management"
+            ],
+            about: "This project demonstrates advanced system architecture skills, including microservices design, event-driven patterns, and containerization. The system processes D&D session recordings through a pipeline that converts media, transcribes speech, identifies speakers, analyzes sentiment, and generates insights for dungeon masters to improve future sessions.",
+            demo: "https://github.com/romerachlin1/DnD_Session_Analyzer",
+            github: "https://github.com/romerachlin1/DnD_Session_Analyzer",
+            video: "ProjectScreenshots/DnD_Session_Analyzer/DnDSessionAnalyzerDemo.mp4",
+            status: "Completed"
+        },
+        megaCoder: {
+            title: "Mega Coder",
+            description: "An AI-powered coding assistant that streamlines Python development, automates GitHub repository fixes, and provides real-time coding tips by analyzing your screen via OCR. It leverages Google Gemini and OpenAI APIs to generate, test, and optimize code.",
+            technologies: ["Python", "OpenAI API", "Google Gemini API", "OCR", "GitHub API", "Code Analysis", "Automated Testing", "pylint"],
+            features: [
+                "AI-powered code generation and optimization using Gemini and OpenAI",
+                "Real-time screen OCR for code analysis and improvement suggestions",
+                "GitHub repository analysis and automated code fixes",
+                "Automated test generation and execution",
+                "Code performance optimization with efficiency measurements",
+                "Automated code linting with pylint integration",
+                "Repository ingestion and analysis using gitingest",
+                "Code corruption testing and quality assurance"
+            ],
+            about: "Mega Coder is a comprehensive AI development tool that combines multiple AI models to assist with code generation, optimization, and quality assurance. It demonstrates advanced API integration, OCR capabilities, automated testing, and intelligent code analysis to help developers write better code faster.",
+            demo: "https://github.com/romerachlin1/Mega_Coder",
+            github: "https://github.com/romerachlin1/Mega_Coder",
+            video: "ProjectScreenshots/Mega_Coder/MegaCoder_RomeRachlin.mp4",
+            status: "Completed"
+        },
+        gmailAIHelper: {
+            title: "Gmail AI Helper",
+            description: "A Chrome extension that integrates with Gmail to offer real-time email composition suggestions using OpenAI's ChatGPT. This AI-powered assistant helps users write more effective emails with intelligent suggestions and completions.",
+            technologies: ["JavaScript", "Chrome Extension API", "OpenAI API", "Gmail API", "HTML/CSS", "Browser Extension Development"],
+            features: [
+                "Seamless Gmail integration as a Chrome extension",
+                "Real-time AI-powered email composition suggestions",
+                "OpenAI ChatGPT integration for intelligent text generation",
+                "Context-aware email writing assistance",
+                "Easy-to-use browser extension interface",
+                "Privacy-focused design with secure API handling"
+            ],
+            about: "This Chrome extension demonstrates browser extension development skills and API integration. It provides users with AI-powered writing assistance directly within Gmail, showcasing practical application of OpenAI's API in a user-friendly browser extension format.",
+            demo: "https://github.com/romerachlin1/Gmail_AI_Helper",
+            github: "https://github.com/romerachlin1/Gmail_AI_Helper",
+            video: "ProjectScreenshots/Gmail_AI_Helper/GmailAIHelper_RomeRachlin.mp4",
+            status: "Completed"
+        },
+        aiShowSuggestion: {
+            title: "AI Show Suggestion",
+            description: "An AI-driven application that recommends TV shows and movies based on user preferences and viewing history. The system uses machine learning and AI algorithms to provide personalized entertainment recommendations.",
+            technologies: ["Python", "AI/ML", "Recommendation Systems", "Data Processing", "User Interface"],
+            features: [
+                "AI-powered TV show and movie recommendations",
+                "Personalized suggestions based on user preferences",
+                "Viewing history analysis",
+                "Intelligent content matching algorithms",
+                "User-friendly interface for browsing recommendations",
+                "Comprehensive entertainment database integration"
+            ],
+            about: "This project demonstrates AI and machine learning application in recommendation systems. It showcases skills in data analysis, user preference modeling, and creating intelligent systems that provide personalized content suggestions to enhance user entertainment experiences.",
+            demo: "https://github.com/romerachlin1/AI_ShowSuggestion",
+            github: "https://github.com/romerachlin1/AI_ShowSuggestion",
+            video: "ProjectScreenshots/AI_ShowSuggestion/showSuggestionAIDemo.mp4",
+            status: "Completed"
         }
     }
 };

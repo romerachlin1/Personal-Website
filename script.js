@@ -149,9 +149,16 @@ function showProject(projectKey) {
                     ${features}
                 </ul>
                 
-                ${project.screenshot ? `<img src="${project.screenshot}" alt="${project.title} Screenshot" class="project-screenshot">` : ''}
-                ${project.screenshot2 ? `<img src="${project.screenshot2}" alt="${project.title} Screenshot 2" class="project-screenshot">` : ''}
-                ${project.screenshot3 ? `<img src="${project.screenshot3}" alt="${project.title} Screenshot 3" class="project-screenshot">` : ''}
+                ${project.screenshot ? (project.screenshot.endsWith('.mp4') || project.screenshot.endsWith('.webm') || project.screenshot.endsWith('.mov') ? 
+                    `<video src="${project.screenshot}" controls class="project-screenshot" style="max-width: 100%; height: auto; margin: 10px 0;">Your browser does not support the video tag.</video>` : 
+                    `<img src="${project.screenshot}" alt="${project.title} Screenshot" class="project-screenshot">`) : ''}
+                ${project.screenshot2 ? (project.screenshot2.endsWith('.mp4') || project.screenshot2.endsWith('.webm') || project.screenshot2.endsWith('.mov') ? 
+                    `<video src="${project.screenshot2}" controls class="project-screenshot" style="max-width: 100%; height: auto; margin: 10px 0;">Your browser does not support the video tag.</video>` : 
+                    `<img src="${project.screenshot2}" alt="${project.title} Screenshot 2" class="project-screenshot">`) : ''}
+                ${project.screenshot3 ? (project.screenshot3.endsWith('.mp4') || project.screenshot3.endsWith('.webm') || project.screenshot3.endsWith('.mov') ? 
+                    `<video src="${project.screenshot3}" controls class="project-screenshot" style="max-width: 100%; height: auto; margin: 10px 0;">Your browser does not support the video tag.</video>` : 
+                    `<img src="${project.screenshot3}" alt="${project.title} Screenshot 3" class="project-screenshot">`) : ''}
+                ${project.video ? `<video src="${project.video}" controls class="project-screenshot" style="max-width: 100%; height: auto; margin: 10px 0;">Your browser does not support the video tag.</video>` : ''}
                 
                 <div class="project-links">
                     ${project.demo ? `<a href="${project.demo}" target="_blank" class="project-demo">Live Demo</a>` : ''}
