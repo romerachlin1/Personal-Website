@@ -5,135 +5,49 @@ const portfolioData = {
             title: "Professional Experience",
             content: `
                 <h3>NOC and Tier 1 Support Student</h3>
-                <p><strong>ThetaRay</strong> | April 2025 - Present</p>
+                <p><strong>ThetaRay</strong> | 2025 – Present</p>
                 <ul>
-                    <li>Provide first-line operational support for AI-powered AML systems during 24/7 shifts</li>
-                    <li>Monitor and troubleshoot systems using Logz.io, Jenkins, Salesforce, Azure, and Linux CLI</li>
-                    <li>Coordinate with Engineering and DevOps teams to resolve incidents and maintain SLAs</li>
-                    <li>Utilize Kubernetes fundamentals in a real-time support environment</li>
-                    <li>Document and communicate issues clearly while ensuring customer service best practices</li>
+                    <li>Deliver first-line operational support for AI-powered AML systems, maintaining 99% uptime. Diagnose real-time incidents using Logz.io, Salesforce, Azure, and Linux CLI.</li>
+                    <li>Manage product upgrades via Jenkins (98% success rate) and monitor Kubernetes pods to ensure system stability.</li>
+                    <li>Debug Apache Airflow DAGs following data failures, achieving &gt;95% successful recovery of impacted pipelines.</li>
                 </ul>
                 
-                <h3>IDF Officer - Planning and Organization</h3>
-                <p><strong>Israel Defense Forces - Central Command</strong> | August 2022 - August 2023</p>
+                <h3>Military Service</h3>
+                <p><strong>Israel Defense Forces</strong> | 2018 – 2023</p>
                 <ul>
-                    <li>Led strategic planning and managed complex multi-year projects, building strong project management and organizational skills</li>
-                    <li>Coordinated cross-functional teams and ensured emergency preparedness, focusing on problem-solving and efficient resource allocation</li>
-                    <li>Developed expertise in analytical thinking, data-driven decision-making, and process optimization under high-pressure situations</li>
-                    <li>Served as Training and Doctrine Officer (TDO) leading various projects concerning the future of units in the command</li>
-                </ul>
-                
-                <h3>IDF Officer - Platoon Commander</h3>
-                <p><strong>Israel Defense Forces - Karakal Battalion</strong> | October 2020 - August 2022</p>
-                <ul>
-                    <li>Led and managed diverse teams in high-pressure environments, developing strong leadership, problem-solving, and communication skills</li>
-                    <li>Coordinated complex operations, requiring strategic thinking, task prioritization, and efficient resource allocation</li>
-                    <li>Managed the performance of a large group of soldiers, fostering teamwork and ensuring mission success under challenging conditions</li>
-                    <li>Developed expertise in decision-making, motivating teams, and handling stress, directly applicable to project management and team leadership</li>
+                    <li><strong>Platoon Commander (Lieutenant):</strong> Led diverse teams in high-pressure environments, fostering teamwork and decision-making.</li>
+                    <li><strong>Training &amp; Doctrine Officer:</strong> Directed strategic projects on unit development, applying data-driven analysis.</li>
                 </ul>
             `
         },
         education: {
-            title: "Education & Certifications",
+            title: "Education",
             content: `
-                <h3>Bachelor of Science in Computer Science</h3>
-                <p><strong>Reichman University (IDC Herzliya)</strong> | 2023 - Present</p>
+                <h3>B.Sc. in Computer Science</h3>
+                <p><strong>Reichman University (IDC Herzliya)</strong> | 2023 – Present</p>
                 <ul>
-                    <li>Merit-based scholarship recipient</li>
-                    <li>First-year average: 85</li>
-                    <li>Focus on backend development, data structures, and algorithms</li>
-                    <li>Currently pursuing advanced coursework in software engineering and computer science fundamentals</li>
-                </ul>
-                
-                <h3>High School Diploma</h3>
-                <p><strong>Mosinzon High School</strong> | 2014 - 2017</p>
-                <ul>
-                    <li>Graduated with distinction (average: 113)</li>
-                    <li>"Nacshon" leadership and science excellence program</li>
-                    <li>5 units in Physics, Chemistry, Math, English</li>
-                    <li>Youth movement instructor and project leader</li>
-                </ul>
-                
-                <h3>Military Leadership Training</h3>
-                <ul>
-                    <li>IDF Officer Training Course - Leadership and Management</li>
-                    <li>Strategic Planning and Operations Management</li>
-                    <li>Team Leadership and Personnel Management</li>
+                    <li>GPA: 85 | Merit-based scholarship recipient.</li>
+                    <li>Key Coursework: Data Structures, Algorithms, OS, Machine Learning, Databases, Computational Geometry.</li>
                 </ul>
             `
         },
         skills: {
             title: "Technical Skills",
             content: `
-                <h3>Programming Languages</h3>
-                <ul>
-                    <li>C# - Advanced</li>
-                    <li>Java - Advanced</li>
-                    <li>Python - Intermediate</li>
-                    <li>C - Intermediate</li>
-                    <li>JavaScript - Intermediate</li>
-                    <li>HTML5/CSS3 - Intermediate</li>
-                    <li>SQL - Intermediate</li>
-                </ul>
-                
-                <h3>Professional Tools & Technologies</h3>
-                <ul>
-                    <li>Microsoft Azure - Advanced</li>
-                    <li>Jenkins - Intermediate</li>
-                    <li>Salesforce - Intermediate</li>
-                    <li>Kubernetes - Fundamentals</li>
-                    <li>Logz.io - Intermediate</li>
-                    <li>Linux CLI - Intermediate</li>
-                    <li>Git/GitHub - Advanced</li>
-                </ul>
-                
-                <h3>Development Frameworks & Libraries</h3>
-                <ul>
-                    <li>Java Swing - Intermediate (Self-taught)</li>
-                    <li>API Integration - Intermediate</li>
-                    <li>Data Visualization (Matplotlib) - Intermediate</li>
-                    <li>JSON Data Processing - Intermediate</li>
-                </ul>
-                
-                <h3>Core Competencies</h3>
-                <ul>
-                    <li>Object-Oriented Programming (OOP) - Inheritance, Polymorphism, Encapsulation</li>
-                    <li>Backend Development & System Architecture</li>
-                    <li>Data Structures & Algorithms</li>
-                    <li>Problem Solving & Critical Thinking</li>
-                    <li>System Monitoring & Troubleshooting</li>
-                    <li>Project Management & Team Leadership</li>
-                    <li>24/7 Operations Support</li>
-                    <li>Technical Documentation</li>
-                </ul>
-                
                 <h3>Languages</h3>
                 <ul>
-                    <li>English - Native</li>
-                    <li>Hebrew - Native</li>
+                    <li>Python, C#, Java, C, SQL, HTML, JavaScript, CSS</li>
                 </ul>
-            `
-        },
-        about: {
-            title: "About Me",
-            content: `
-                <h3>Who I Am</h3>
-                <p>I'm Rome Rachlin, a Computer Science student at Reichman University with a passion for software development, problem-solving, and building scalable, efficient software solutions through strong object-oriented programming practices. Currently working as a NOC and Tier 1 Support specialist at ThetaRay while pursuing my degree with a merit-based scholarship, with C# being my strongest programming language.</p>
                 
-                <h3>My Philosophy</h3>
-                <p>"Rome wasn't built in a day, but every great creation starts with passion and perseverance." This motto drives my approach to both learning and development. I believe in continuous growth through self-learning, hands-on projects, and tackling complex challenges head-on.</p>
+                <h3>Concepts</h3>
+                <ul>
+                    <li>Microservices, Event-Driven Architecture, GenAI &amp; LLMs, Vector Search, OOP, Data Structures</li>
+                </ul>
                 
-                <h3>Professional Background</h3>
-                <p>Before transitioning into tech, I served as an IDF officer and platoon commander for nearly 5 years, where I developed crucial leadership and organizational skills. This experience taught me project management, strategic thinking, and how to perform under pressure - skills that directly enhance my approach to software development and problem-solving.</p>
-                
-                <h3>Technical Focus</h3>
-                <p>My primary interests lie in backend development with a strong emphasis on object-oriented programming principles. I'm passionate about applying OOP concepts like inheritance, polymorphism, and encapsulation to create clean, maintainable, and scalable software solutions. My experience spans data structures, algorithms, and system architecture, always with a focus on writing well-structured, object-oriented code.</p>
-                
-                <h3>Current Role & Goals</h3>
-                <p>In my current position at ThetaRay, I provide operational support for AI-powered AML systems, working with cutting-edge technologies while maintaining critical system uptime. This role combines my technical skills with my ability to work under pressure and coordinate with cross-functional teams.</p>
-                
-                <h3>Personal Interests</h3>
-                <p>When I'm not coding or studying, I enjoy exploring new technologies, working on personal programming projects, and yes - I'm also a Pokémon Champion! I believe in maintaining a balance between technical excellence and personal interests that keep me motivated and creative.</p>
+                <h3>Tools</h3>
+                <ul>
+                    <li>Git/GitHub, Docker, Kubernetes, RabbitMQ, Redis, PostgreSQL, MinIO, Ollama, Jenkins, Azure, Linux CLI</li>
+                </ul>
             `
         }
     },
