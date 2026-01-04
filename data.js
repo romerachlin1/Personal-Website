@@ -49,6 +49,28 @@ const portfolioData = {
                     <li>Git/GitHub, Docker, Kubernetes, RabbitMQ, Redis, PostgreSQL, MinIO, Ollama, Jenkins, Azure, Linux CLI</li>
                 </ul>
             `
+        },
+        summary: {
+            title: "Summary",
+            content: `
+                <p>Rome wasn't built in a day, but every great creation starts with passion and perseverance. I am a Computer Science student (BSc, Reichman University, started 2023) combining strong foundations in algorithms and OOP with advanced practical experience in Generative AI and Microservices architecture. Skilled in Python, C#, C, and Java, with a proven track record of architecting event-driven systems and deploying privacy-focused LLM solutions. Background as an officer in the IDF and current NOC support engineer has honed my problem-solving, teamwork, and ability to perform under pressure.</p>
+            `
+        },
+        volunteering: {
+            title: "Volunteering",
+            content: `
+                <h3>Volunteer Tutor</h3>
+                <p><strong>Yad Hatisha Neighborhood</strong> | 2025 – Present</p>
+                <ul>
+                    <li>Providing personalized academic guidance for children.</li>
+                </ul>
+                
+                <h3>Head Counselor</h3>
+                <p><strong>Hanoar Haoved veHalomed</strong> | 2017 – 2018</p>
+                <ul>
+                    <li>Mentored youth to foster leadership and social responsibility.</li>
+                </ul>
+            `
         }
     },
     projects: {
