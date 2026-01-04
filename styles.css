@@ -115,64 +115,152 @@ body {
     background-repeat: no-repeat;
 }
 
-/* Map Regions */
+/* Fantasy Map Node Component */
 .map-region {
     position: absolute;
     width: 100px;
     height: 100px;
     border-radius: 50%;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    border: 3px solid transparent;
-    background: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(10px);
-    z-index: 10;
     user-select: none;
+    z-index: 10;
+    
+    /* Obsidian Core - Deep radial gradient background */
+    background: radial-gradient(circle at 30% 30%, 
+        rgba(75, 0, 130, 0.4) 0%,
+        rgba(25, 25, 112, 0.3) 40%,
+        rgba(0, 0, 0, 0.9) 100%);
+    
+    /* Bronze Frame - Multiple box-shadow layers for 3D metallic ring */
+    box-shadow: 
+        /* Outer rim highlight */
+        0 0 0 2px rgba(184, 134, 11, 0.6),
+        /* Main bronze ring */
+        0 0 0 4px rgba(139, 69, 19, 0.8),
+        /* Inner shadow for depth */
+        inset 0 0 0 3px rgba(101, 67, 33, 0.9),
+        /* Top highlight */
+        inset -2px -2px 4px rgba(184, 134, 11, 0.4),
+        /* Bottom shadow */
+        inset 2px 2px 4px rgba(0, 0, 0, 0.8),
+        /* Outer glow */
+        0 4px 8px rgba(0, 0, 0, 0.5),
+        /* Depth shadow */
+        0 6px 12px rgba(0, 0, 0, 0.4);
 }
 
-.map-region:hover {
-    transform: scale(1.1);
-    border-color: #d4af37;
-    box-shadow: 0 0 20px rgba(212, 175, 55, 0.5);
-    background: rgba(255, 255, 255, 0.2);
-}
-
-.resume-region {
-    background: linear-gradient(135deg, rgba(52, 152, 219, 0.3), rgba(41, 128, 185, 0.3));
-    border-color: #3498db;
-}
-
-.resume-region:hover {
-    border-color: #d4af37;
-    box-shadow: 0 0 20px rgba(52, 152, 219, 0.5);
-}
-
-.project-region {
-    background: linear-gradient(135deg, rgba(155, 89, 182, 0.3), rgba(142, 68, 173, 0.3));
-    border-color: #9b59b6;
-}
-
-.project-region:hover {
-    border-color: #d4af37;
-    box-shadow: 0 0 20px rgba(155, 89, 182, 0.5);
+.map-region:active {
+    transform: scale(0.95);
 }
 
 .region-label {
-    font-size: 0.8rem;
+    font-family: 'Cinzel', serif;
+    font-size: 0.75rem;
     font-weight: 600;
-    color: #fff;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
-    margin-bottom: 5px;
+    color: rgba(240, 240, 240, 0.95);
+    text-shadow: 
+        0 0 4px rgba(0, 0, 0, 0.9),
+        0 1px 2px rgba(0, 0, 0, 0.8),
+        0 0 8px rgba(184, 134, 11, 0.3);
+    margin-bottom: 4px;
+    letter-spacing: 0.5px;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
 }
 
 .region-icon {
-    font-size: 1.7rem;
-    filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.7));
+    font-size: 1.6rem;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.8));
+    transition: filter 0.3s ease;
+}
+
+/* Variant: Core (Legendary Gold) - for skills/experience */
+.resume-region:hover,
+.map-region.fantasy-node--core:hover {
+    transform: scale(1.05);
+    box-shadow: 
+        0 0 0 2px rgba(212, 175, 55, 0.8),
+        0 0 0 4px rgba(184, 134, 11, 0.9),
+        inset 0 0 0 3px rgba(101, 67, 33, 0.9),
+        inset -2px -2px 4px rgba(255, 215, 0, 0.5),
+        inset 2px 2px 4px rgba(0, 0, 0, 0.8),
+        0 0 30px rgba(212, 175, 55, 0.8),
+        0 0 50px rgba(184, 134, 11, 0.6),
+        0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.resume-region:hover .region-label,
+.map-region.fantasy-node--core:hover .region-label {
+    color: #fff;
+    text-shadow: 
+        0 0 6px rgba(255, 215, 0, 0.8),
+        0 0 12px rgba(212, 175, 55, 0.6),
+        0 1px 2px rgba(0, 0, 0, 0.9);
+}
+
+.resume-region:hover .region-icon,
+.map-region.fantasy-node--core:hover .region-icon {
+    filter: drop-shadow(0 0 8px rgba(255, 215, 0, 0.6)) drop-shadow(0 2px 4px rgba(0, 0, 0, 0.8));
+}
+
+/* Variant: Tech (Electric Blue/Cyan) - for code projects */
+.project-region:hover,
+.map-region.fantasy-node--tech:hover {
+    transform: scale(1.05);
+    box-shadow: 
+        0 0 0 2px rgba(0, 191, 255, 0.8),
+        0 0 0 4px rgba(30, 144, 255, 0.9),
+        inset 0 0 0 3px rgba(101, 67, 33, 0.9),
+        inset -2px -2px 4px rgba(135, 206, 250, 0.5),
+        inset 2px 2px 4px rgba(0, 0, 0, 0.8),
+        0 0 30px rgba(0, 191, 255, 0.8),
+        0 0 50px rgba(30, 144, 255, 0.6),
+        0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.project-region:hover .region-label,
+.map-region.fantasy-node--tech:hover .region-label {
+    color: #fff;
+    text-shadow: 
+        0 0 6px rgba(135, 206, 250, 0.9),
+        0 0 12px rgba(0, 191, 255, 0.7),
+        0 1px 2px rgba(0, 0, 0, 0.9);
+}
+
+.project-region:hover .region-icon,
+.map-region.fantasy-node--tech:hover .region-icon {
+    filter: drop-shadow(0 0 8px rgba(135, 206, 250, 0.7)) drop-shadow(0 2px 4px rgba(0, 0, 0, 0.8));
+}
+
+/* Variant: Creative (Mystic Purple/Magenta) - for RPG/hobby items */
+.map-region.fantasy-node--creative:hover {
+    transform: scale(1.05);
+    box-shadow: 
+        0 0 0 2px rgba(186, 85, 211, 0.8),
+        0 0 0 4px rgba(138, 43, 226, 0.9),
+        inset 0 0 0 3px rgba(101, 67, 33, 0.9),
+        inset -2px -2px 4px rgba(221, 160, 221, 0.5),
+        inset 2px 2px 4px rgba(0, 0, 0, 0.8),
+        0 0 30px rgba(186, 85, 211, 0.8),
+        0 0 50px rgba(138, 43, 226, 0.6),
+        0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.map-region.fantasy-node--creative:hover .region-label {
+    color: #fff;
+    text-shadow: 
+        0 0 6px rgba(221, 160, 221, 0.9),
+        0 0 12px rgba(186, 85, 211, 0.7),
+        0 1px 2px rgba(0, 0, 0, 0.9);
+}
+
+.map-region.fantasy-node--creative:hover .region-icon {
+    filter: drop-shadow(0 0 8px rgba(221, 160, 221, 0.7)) drop-shadow(0 2px 4px rgba(0, 0, 0, 0.8));
 }
 
 
